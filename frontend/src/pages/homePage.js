@@ -3,9 +3,12 @@ import {Link} from 'react-router-dom';
 import './homePage.css';
 import logo from '../assets/LionsLineup.png'
 import heroBackground from '../assets/heroimage.png'
+import MainComponent from '../components/maincomponent'
+import Tabs from '../components/Tabs/Tabs';
 
 const HomePage = () => {
     return(
+        <>
         <div className='home-page'>
             <nav className='navbar'>
                 <div className="logo-container">
@@ -34,7 +37,10 @@ const HomePage = () => {
                     <button className="hero-button">CHECK NOW!</button>
                 </div>
             </div>
+            
         </div>
+        <Tabs />
+        </>
     )
 }
 

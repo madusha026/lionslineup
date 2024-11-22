@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../../assets/fonts/FontsFree-Net-SFProText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../../assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+  font-weight: italic;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../../assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+  
+
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px 760px;
+    font-family: 'SF Pro', sans-serif;
+}
+  
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Tab Labels */
+  .tab-label {
+    display: flex;
+    padding: 20px 40px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tab-label:hover {
+    background-color: #ddd;
+  }
+  
+  input[type="radio"]:checked + .tab-label {
+    background-color: #007bff;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+  }
+  
+  input[type="radio"]:checked + .tab-label + .tab-content {
+    display: block;
+  }
+  
