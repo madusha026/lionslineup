@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'SF Pro';
-    src: url('/Users/madushalakshan026/Library/Fonts/FontsFree-Net-SFProText-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/FontsFree-Net-SFProText-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'SF Pro';
-    src: url('/Users/madushalakshan026/Library/Fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+    src: url('../assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
     font-weight: italic;
     font-style: italic;
   }
 
 @font-face {
     font-family: 'SF Pro';
-    src: url('/Users/madushalakshan026/Library/Fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+    src: url('../assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
     font-weight: bold;
     font-style: bold;
   }
@@ -30,7 +30,7 @@ body{
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center;
+  justify-content:center;
 }
 
 .navbar{
@@ -120,8 +120,8 @@ body{
   
 .hero-button {
     background:linear-gradient(93.28deg, #FFCC00 -2.06%, #CC6600 140.93%);
-    color: #15295E;
-    border: none;
+    color: #162960;
+    border-style:#e5941f;
     height: 85px;
     margin: 50px;
     padding: 0px 30px;
@@ -131,8 +131,12 @@ body{
     cursor: pointer;
     transition: background-color 0.3s;
     white-space: nowrap;
+    border-color: #e5941f;
+    
   }
 
   .hero-button:hover {
-    background-color: #e5941f;
+    color: #e5941f;
+    background:transparent;
+    
   }
