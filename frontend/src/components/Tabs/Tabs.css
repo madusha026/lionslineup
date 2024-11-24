@@ -19,57 +19,95 @@
   font-style: bold;
 }
 
-
-  
+body {
+  background-color: #ffffff; /* Make the body white */
+  font-family: 'SF Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .tabs-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0px 760px;
-    font-family: 'SF Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensures it takes up the full height of its container */
+  background: linear-gradient(to bottom, #082567, #4f8a8b); /* Gradient background for the tab container */
+  padding: 20px;
 }
-  
-  
-  input[type="radio"] {
-    display: none;
+
+.tabs-controls {
+  display: flex;
+  background: linear-gradient(90deg, #374c92, #233b71);
+  border-radius: 50px;
+  padding: 20px;
+  gap: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'SF Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+input[type="radio"]:checked + .tab-label {
+  background-color: #576bad;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tab-label:hover {
+  color: #576bad;
+  opacity: 0.9;
+}
+
+.tabs-content {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.tab-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.image-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container1 {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  /* Tab Labels */
-  .tab-label {
-    display: flex;
-    padding: 20px 40px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  to {
+    opacity: 1;
   }
-  
-  .tab-label:hover {
-    background-color: #ddd;
-  }
-  
-  input[type="radio"]:checked + .tab-label {
-    background-color: #007bff;
-    color: #fff;
-    border-bottom: 1px solid #fff;
-  }
-  
-  /* Tab Content */
-  .tab-content {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color: #fff;
-  }
-  
-  input[type="radio"]:checked + .tab-label + .tab-content {
-    display: block;
-  }
-  
+}
