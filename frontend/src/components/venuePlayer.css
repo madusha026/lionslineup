@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../assets/fonts/FontsFree-Net-SFProText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro';
+    src: url('../assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+    font-weight: italic;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro';
+    src: url('../assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: bold;
+  }
+
+  body {
+    background-color: #ffffff; /* Make the body white */
+    font-family: 'SF Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.selectedplayers{
+    margin: 20px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+} */
+
+.venuess {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #111;
+    cursor: pointer;
+    width: 50%;
+}
+
+.venuess:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.response {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    background-color: #fff;
+    color: #111;
+}
+
+.response:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+
+.playerh3{
+    color: #000;
+}

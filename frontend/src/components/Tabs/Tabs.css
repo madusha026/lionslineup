@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../../assets/fonts/FontsFree-Net-SFProText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro';
+    src: url('../../assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+    font-weight: italic;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro';
+    src: url('../../assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: bold;
+  }
+  
+  body {
+    background-color: #ffffff; /* Make the body white */
+    font-family: 'SF Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tabs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures it takes up the full height of its container */
+    background: linear-gradient(to bottom, #082567, #4f8a8b); /* Gradient background for the tab container */
+    padding: 20px;
+  }
+  
+  .tabs-controls {
+    display: flex;
+    background: linear-gradient(90deg, #374c92, #233b71);
+    border-radius: 50px;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .tab-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'SF Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+  
+  input[type="radio"]:checked + .tab-label {
+    background-color: #576bad;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tab-label:hover {
+    color: #576bad;
+    opacity: 0.9;
+  }
+  
+  .tabs-content {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .image-container {
+    
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .image-container1 {
+    background-color: #f9f9f9;
+    background: linear-gradient(90deg, #374c92, #233b71);
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 40px;
+    padding-right: 0px;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
