@@ -16,6 +16,9 @@ const HomePage = () => {
                 </div>
                 <ul className="nav-links">
                     <li>
+                        <Link to="/chat-bot" className="nav-link">Chat Bot</Link>
+                    </li>
+                    <li>
                         <Link to="/about" className="nav-link">About</Link>
                     </li>
                     <li>
